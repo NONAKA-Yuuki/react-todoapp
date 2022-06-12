@@ -13,7 +13,7 @@ function App() {
     <div className="body">
       <Title />
       <InputForm taskList={taskList} setTaskList={setTaskList} />
-      <TodoList />
+      <TodoList taskList={taskList} setTaskList={setTaskList} />
     </div>
   );
 }
