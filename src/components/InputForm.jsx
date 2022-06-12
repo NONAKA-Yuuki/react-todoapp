@@ -12,7 +12,8 @@ export const InputForm = ({taskList, setTaskList}) => {
       ...taskList,
       {
         id: taskList.length,  // 本当は避けるべきidの付け方
-        text: inputText
+        text: inputText,
+        completed: false
       }
     ]);
 
