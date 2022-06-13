@@ -7,6 +7,12 @@ export const InputForm = ({taskList, setTaskList}) => {
   const handleSubmit = (e) => {
     e.preventDefault()  // buttonを押したときに再レンダリングさせない
 
+    /** Formが空の時はアラートを返す */
+    if(inputText == "") {
+      alert("入力内容が空です！");
+      return;
+    }
+
     /* タスクを追加する */
     setTaskList([
       ...taskList,
